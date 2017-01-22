@@ -1,0 +1,32 @@
+{
+"name": "Gratitude",
+"description": "Replaces the new tab page with a list of things you are thankful for.",
+"version": "1.0.0",
+"manifest_version": 2,
+"icons": {
+    "120": "Gratitude.png"
+},
+ 
+    
+
+
+"chrome_url_overrides" : { 
+    "newtab": "gratitude.html"
+    
+    
+},
+    
+"permissions": [
+    "tabs",
+    "<all_urls>",
+    "activeTab"
+  ],
+    
+"content_scripts": [
+ {
+    "js": ["jquery-3.1.1.min.js", "gratitude.js"],
+    "matches": [ "http://*/*", "https://*/*"]
+ }
+ ]
+
+}

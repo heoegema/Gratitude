@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Tab</title>
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="gratitude.js"></script>
+  
+</head>
+<body>
+
+<style> 
+    body { 
+       font-family: "Helvetica Neue";
+       color: white;
+       text-shadow: 3px 2px 4px #000000;
+    
+    }
+    
+    .googlesearch input { 
+    
+       align-items: center;
+    }
+    
+    h1 { 
+    
+       font-size: 45px;
+    
+    }
+    
+    #container { 
+        margin-top: 18%;
+        text-align: center;
+        vertical-align: middle;
+
+    }
+    ul { 
+        text-align: center;
+        padding: 0px;
+    }
+    
+    #clear { 
+        color: gray;
+        font-size: medium;
+        padding: 0px;
+    
+    }
+    #clock { 
+        margin-left: 90%;
+        font-size: xx-large;
+    
+    }
+    a { 
+    
+        text-decoration: none;
+    
+    }
+    a:hover { 
+        text-decoration: underline;
+        color: darkgray;
+    
+    
+    }
+    #taskInput { 
+    
+        background-color: transparent;
+        color: #eeeeee;
+        outline: none;
+        outline-style: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-size: xx-large;
+        text-align:center;
+        border-bottom: solid #eeeeee 3px;
+        width: 50%;
+    
+    }
+    li { 
+     list-style-type: none;
+     font-size: large;
+    
+    }
+    .quote-container { 
+    
+      align-items:center;
+    
+    }
+    .quote { 
+     color: white; 
+     font-size: x-large;
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     text-align:center;
+
+    }
+    
+</style>
+ 
+<!--Social Media Links--> 
+<div class="socialmedialinks">
+    <a href="https://www.facebook.com/"><img src="images/Facebook.png"></a>
+    <a href="https://twitter.com/?lang=en"><img src="images/Twitter.png"></a>
+    <a href="https://plus.google.com/collections/featured"><img src="images/GooglePlus.png"></a>
+    <a href="https://www.linkedin.com/uas/login"><img src="images/LinkedIn.png"></a>
+    <a href="https://www.pinterest.com/"> <img src="images/Pinterest.png"></a>
+</div>
+
+<!--Clock--> 
+<div id='clock'></div>
+
+<!--Gratitude List--> 
+<div id="container">
+    <header>
+         <h1>What are you thankful for?</h1>
+    </header>
+    <section id="taskIOSection">
+        <div id="formContainer">
+            <form id="taskEntryForm">
+                <input id="taskInput" />
+            </form>
+        </div>
+        <a href="#" id="clear">Clear All</a>
+        <ul id="taskList">
+        </ul>
+    </section>
+</div>
+  
+<div class="quote-container">
+    <p class="quote">"The pathway to happiness is found in gratitude."</p>
+</div>
+    
+</body>
+</html>
